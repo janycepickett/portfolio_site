@@ -1,0 +1,260 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+/* NAVBAR CSS */
+nav{
+    padding: left 4em;;
+    padding-right: 4em;
+    /* TODO: figure out no longer staying fixed */
+    position: fixed;
+    width: 100%;
+    top:0;
+    left:0;
+    z-index: 100;
+  }
+
+  nav ul {
+    margin:0;
+    padding:0;
+    display:flex;
+  }
+  nav li{
+    padding: 1em 0;
+    list-style-type: none;
+    padding: 25px;
+    font-size: 1.7em;
+  }
+  
+  nav li a {
+    color: black;
+    font-weight: 600;
+    opacity: 1;
+    text-decoration: none;
+    transition: .3s;
+  }
+  
+  nav li a:hover {
+    color:white;
+    opacity: 1;
+    text-decoration: none;
+  }
+
+  /* HEADER CSS */
+.header {
+    position: relative;
+    /* background-image: url(/images/geometric-decoration-5836.jpg); */
+    background-image: url(/images/Janyce/test_background.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: antiquewhite;
+}
+
+
+.welcome{
+    margin-top: 25vh;
+    text-align: center;
+    font-weight: 500;
+    font-size:2em;
+    color: rgb(255, 255, 255)}
+
+#changingword {
+    color:rgb(161, 58, 245);
+      } 
+
+/* IMAGE GALLERY CSS */
+.image-gallery {
+    /* height: 100%; */
+    display: grid;
+    grid-template-columns: 1fr minmax(350px, 1fr)  minmax(350px, 1fr) minmax(350px, 1fr) 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+    padding-left: 20%;
+    grid-template-areas:
+    ". a b ."
+    ". c d ."
+    ;
+    background-color: rgb(253, 232, 235) !important;
+}
+
+.box-styling {
+    height: 350px;
+    background-color: rgb(128, 45, 45);
+}
+
+.box1 {
+    grid-area: a;
+}
+
+.box2 {
+    grid-area: b;
+}
+
+.box3 {
+    grid-area: c;
+}
+
+.box4 {
+    grid-area: d;
+}
+
+.box5 {
+    grid-area: e;
+}
+
+.box6 {
+    grid-area: f;
+}
+
+.bigText {
+    font-size: 2em;
+    padding-right: .5ch;
+}
+
+
+/* ABOUT ME CSS*/
+.about-me {
+    height: 100vh !important;
+    /* background-color: rgba(255, 210, 216, 0.637) !important; */
+    background-color: rgb(246, 225, 255) !important;
+    /* background-color: rgba(225, 255, 237, 0.404) !important; */
+    padding: 20vh 50px 0 50px;
+    column-count: 2;
+}
+
+/* CONTACT CSS */
+.contact {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 25vh !important;
+    padding-bottom: 50vh;
+    /* background-color: rgba(255, 210, 216, 0.637) !important; */
+    /* background-color: rgba(246, 225, 255, 0.404) !important; */
+    background-color: rgb(225, 255, 237) !important;
+    grid-template-columns: 3fr minmax(2fr, 1fr) minmax(2fr, 1fr) 3fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". title title ."
+    ". logo wrapper ."
+    ;
+}
+
+.contact-title {
+    font-size: 2em;
+    grid-area: title;
+    padding-bottom: 50px;
+}
+
+.logo-svg {
+    width: 400px;
+    grid-area: logo;
+}
+
+.contact-wrapper {
+    grid-area: wrapper;
+}
+
+
+   /* footer section */
+   footer{
+    grid-area:footer;
+  }
+  footer p{
+    font-size:2em;
+  }
+  footer li {
+    display:inline;
+  }
+  footer ul {
+    max-width: 640px;
+    margin: 2em auto;
+    padding:0;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+  }
+  footer ul li{
+    list-style: none;
+    align-self:flex-end;
+  }
+  footer ul li a {
+    text-decoration:none;
+    color: black;
+    opacity:.6;
+    transition: .3s;
+  }
+  footer ul li a:hover {
+    text-decoration:none;
+    color:rgb(255, 255, 255);
+  }
+  footer svg {
+    width:20%;
+  }
+  footer p{
+    font-size: 1em;
+  }
+
+
+
+  /* MEDIA QUERY FOR SMALL SCREENS */
+
+/* MEDIA QUERY FOR MOBILE */
+ @media (max-width:735px){
+     nav {
+         padding-left: 0;
+     }
+
+    .image-gallery {
+        padding-bottom: 250px;
+        padding-top: 250px;
+        padding-left: 10%;
+        grid-template-columns: 1fr minmax(400px, 1fr) 1fr;
+        grid-template-areas:
+        ".a."
+        ".b."
+        ".c."
+        ".d."
+        ;
+    }
+    .about-me
+    {column-count: 1;
+    }
+
+    .contact {
+        padding-bottom: 200%;
+        grid-template-columns: 3fr minmax(2fr, 1fr) 3fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        ". title ."
+        ". logo ."
+        ". wrapper ."
+        ;
+    }
+    
+ }
+
+
+ #j{
+  fill: rgb(255, 153, 204);
+  }
+
+#a{
+  fill: rgb(204, 153, 255);
+  }
+
+#n{
+  fill: rgb(101, 233, 145);
+  }

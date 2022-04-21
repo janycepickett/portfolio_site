@@ -1,0 +1,23 @@
+div {
+  text-align: center;
+  padding: 150px;
+}
+
+#j2{
+  fill: rgb(255, 153, 204);
+  animation: bounceInLeft; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 1.5s; /* don't forget to set a duration! */
+ 
+}
+#a2{
+  fill: rgb(204, 153, 255);
+  animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 1.5s; /* don't forget to set a duration! */
+ 
+}
+#n2{
+  fill: rgb(101, 233, 145);
+  animation: bounceInRight; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 1.5s; /* don't forget to set a duration! */
+ 
+}
